@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    position: absolute;
+    padding: 42px 32px;
+    clip-path: circle(2% at 90% 12%);
+    transition: all ease-in-out .3s;
+    background-color: #ffffff;
+    right: 10px;
+    top: 0;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1.8;
+    visibility: hidden;
+}
+
+.card:hover, .card:focus {
+    clip-path: circle(75%);
+    border-radius: 20px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.12), 0 3px 18px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    outline: none;
+}
+
+.card:hover > * {
+    visibility: visible;
+}
+
+@media (max-width: 860px) {
+    .card {
+        display: none;
+    }
+}
